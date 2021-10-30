@@ -105,6 +105,14 @@ begin
 					s_r=>s_r,
 					ov=>ov_sr,
 					s=>s3);
+	i_control : UControl
+		port map(
+					sel=>sel,
+					sel_s=>sel_s,
+					sel_ov=>sel_ov,
+					s_r=>s_r,
+					sel_b=>sel_b,
+					sel_log=>sel_log);
 	i_Mux1 : MuxSelectB
 		port map(
 					b=>b,
